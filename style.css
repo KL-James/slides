@@ -8,23 +8,9 @@
     overflow: hidden;
 }
 .images{
-    position: relative;
+    display: flex;
+    transition: all 1s;
 }
 .images > img{
     width: 100%;
-    transition: all 0.3s;
-    position: absolute;
-    top: 0;
-}
-.images > img.current{
-    left: 0;
-    transform: translateY(0);
-    z-index: 1;
-}   
-.images > img.leave{
-    transform: translateY(-100%);    
-    z-index: 1;
-}
-.images > img.enter{
-    transform: translateY(100%);        
 }
